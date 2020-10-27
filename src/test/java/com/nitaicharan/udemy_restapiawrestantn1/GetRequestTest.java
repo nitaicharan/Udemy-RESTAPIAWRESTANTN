@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class AppTest {
+public class GetRequestTest {
 
     private String KEY = System.getenv("API_KEY");
 
@@ -23,7 +23,7 @@ public class AppTest {
     }
 
     @Test
-    public void statusCode200Verification() {
+    public void statusCodeVerification() {
         RestAssured.given()//
                 .param("units", "imperial")//
                 .param("origins", "Washington,DC")//
@@ -33,5 +33,17 @@ public class AppTest {
                 .get("/distancematrix/json")//
                 .then()//
                 .statusCode(200);
+    }
+
+    @Test
+    public void getRespondeBody() {
+        var response = RestAssured.given()//
+                .param("units", "imperial")//
+                .param("origins", "Washington,DC")//
+                .param("destinations", "New+York+City,NY")//
+                .param("key", KEY)//
+                .when()//
+                .get("/distancematrix/json");
+        System.out.println(response.getBody().prettyPrint());
     }
 }

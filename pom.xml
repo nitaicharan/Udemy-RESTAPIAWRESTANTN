@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.nitaicharan.udemy_restapiawrestantn1</groupId>
@@ -7,19 +8,23 @@
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>udemy_restapiawrestantn1</name>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/nitaicharan/Udemy-RESTAPIAWRESTANTN1</url>
 
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <build>
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.8.0</version>
+          <configuration>
+            <release>11</release>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -58,7 +63,6 @@
       <version>7.3.0</version>
       <scope>test</scope>
     </dependency>
-
 
   </dependencies>
 
