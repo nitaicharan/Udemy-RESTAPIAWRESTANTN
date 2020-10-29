@@ -2,10 +2,18 @@ package com.nitaicharan.udemy_restapiawrestantn1;
 
 import static org.junit.Assert.assertNotNull;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.nitaicharan.udemy_restapiawrestantn1.model.PlacesAdd;
+
+import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 
 public class PostRequestTest {
 
@@ -24,31 +32,29 @@ public class PostRequestTest {
 
     @Test
     public void statusCodeVerification() {
-        var response = RestAssured.given()//
-                .queryParam("key", KEY)//
-                .body(""//
-                        + "{"//
-                        + "\"location\": {"//
-                        + "\"lat\" : -33.8669710,"//
-                        + "\"lang\" : 151.1958750"//
-                        + "},"//
-                        + "\"accuracy\" : 50,"//
-                        + "\"name\": \"Google Shoes!\","//
-                        + "\"phone_number\": \"(02) 9374 4000\","//
-                        + "\"address\": \"48 Pirrama Road, Pyrmont, NSW @))(, Australia\","//
-                        + "\"types\": [\"shoes_store\"],"//
-                        + "\"website\": \"http://www.google.com.au/\","//
-                        + "\"language\": \"en-AU\""//
-                        + "}"//
-                )//
-                .when()//
-                .post("/distancematrix/json");
-        // .then()//
-        // .statusCode(200).and()//
-        // .contentType(ContentType.JSON).and()//
-        // .body("scope", equalTo("APP")).and()//
-        // .body("status", equalTo("OK"));
+        Map<String, Double> location = new HashMap<>();
+        location.put("lat", -33.8669710);
+        location.put("lang", 151.1958750);
 
-        System.out.println(response.body().asString());
+        var placesAdd = PlacesAdd.builder()//
+                .location(location)//
+                .accuracy(50)//
+                .name("Google Shoes!")//
+                .phoneNumber("(02) 9374 4000")//
+                .address("48 Pirrama Road, Pyrmont, NSW @))(, Australia")//
+                .types(Arrays.asList("shoes_store"))//
+                .website("http://www.google.com.au")//
+                .language("en-AU")//
+                .build();
+
+        RestAssured.given()//
+                .queryParam("key", KEY)//
+                .body(placesAdd)//
+                .when()//
+                .post("/distancematrix/json").then()//
+                .statusCode(200).and()//
+                .contentType(ContentType.JSON).and()//
+                .body("scope", Matchers.equalTo("APP")).and()//
+                .body("status", Matchers.equalTo("OK"));
     }
 }

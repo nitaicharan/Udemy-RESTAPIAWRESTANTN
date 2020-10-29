@@ -8,8 +8,15 @@
   <name>udemy_restapiawrestantn1</name>
   <url>https://github.com/nitaicharan/Udemy-RESTAPIAWRESTANTN1</url>
 
-
   <dependencies>
+
+    <!-- Lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.16</version>
+      <scope>provided</scope>
+    </dependency>
 
     <!-- JUnit Jupiter API -->
     <dependency>
