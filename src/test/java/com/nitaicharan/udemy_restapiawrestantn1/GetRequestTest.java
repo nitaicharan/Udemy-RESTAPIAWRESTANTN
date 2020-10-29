@@ -9,7 +9,7 @@ import io.restassured.RestAssured;
 
 public class GetRequestTest {
 
-    private String KEY = System.getenv("API_KEY");
+    private String KEY = System.getenv("GOOGLEMAP_KEY");
 
     @BeforeClass
     public void setup() {

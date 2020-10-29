@@ -11,7 +11,7 @@ import io.restassured.http.ContentType;
 
 public class ValidateResponseTest {
 
-    private String KEY = System.getenv("API_KEY");
+    private String KEY = System.getenv("GOOGLEMAP_KEY");
 
     @BeforeClass
     public void setup() {
