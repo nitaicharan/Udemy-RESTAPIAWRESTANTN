@@ -30,7 +30,7 @@ public class PostRequestTest {
         assertNotNull(KEY);
     }
 
-    @Test
+    @Test(enabled = false)
     public void statusCodeVerification() {
         Map<String, Double> location = new HashMap<>();
         location.put("lat", -33.8669710);
@@ -48,6 +48,7 @@ public class PostRequestTest {
                 .build();
 
         RestAssured.given()//
+                .accept(ContentType.JSON)//
                 .queryParam("key", KEY)//
                 .body(placesAdd)//
                 .when()//

@@ -2,14 +2,13 @@ package com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple;
 
 import static org.junit.Assert.assertNotNull;
 
-import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 
-public class TwitterPOSTRequest {
+public class TwitterPOSTRequestTest {
+
     private String TWITTER_KEY = System.getenv("TWITTER_KEY");
     private String TWITTER_SECRET_KEY = System.getenv("TWITTER_SECRET_KEY");
     private String TWITTER_TOKEN = System.getenv("TWITTER_TOKEN");
@@ -18,7 +17,7 @@ public class TwitterPOSTRequest {
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = "https://api.twitter.com";
-        RestAssured.basePath = "/2/tweets/1275828087666679809";
+        RestAssured.basePath = "/1.1/statuses";
     }
 
     @Test
@@ -29,15 +28,14 @@ public class TwitterPOSTRequest {
         assertNotNull(TWITTER_SECRET_TOKEN);
     }
 
-    @Test
+    @Test(enabled = false)
     public void statusCodeVerification() {
         RestAssured.given()//
-                .queryParam("")//
+                .auth()//
+                .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
+                .queryParam("status", "My First Tweet")//
                 .when()//
-                .post("/distancematrix/json").then()//
-                .statusCode(200).and()//
-                .contentType(ContentType.JSON).and()//
-                .body("scope", Matchers.equalTo("APP")).and()//
-                .body("status", Matchers.equalTo("OK"));
+                .post("/update.json").then()//
+                .statusCode(200);
     }
 }
