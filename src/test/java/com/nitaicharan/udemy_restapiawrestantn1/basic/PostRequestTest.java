@@ -1,4 +1,4 @@
-package com.nitaicharan.udemy_restapiawrestantn1;
+package com.nitaicharan.udemy_restapiawrestantn1.basic;
 
 import static org.junit.Assert.assertNotNull;
 

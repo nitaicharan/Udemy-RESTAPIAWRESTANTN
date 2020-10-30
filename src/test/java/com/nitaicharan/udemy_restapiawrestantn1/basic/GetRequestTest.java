@@ -1,15 +1,13 @@
-package com.nitaicharan.udemy_restapiawrestantn1;
+package com.nitaicharan.udemy_restapiawrestantn1.basic;
 
-import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertNotNull;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 
-public class ValidateResponseTest {
+public class GetRequestTest {
 
     private String KEY = System.getenv("GOOGLEMAP_KEY");
 
@@ -34,9 +32,18 @@ public class ValidateResponseTest {
                 .when()//
                 .get("/distancematrix/json")//
                 .then()//
-                .statusCode(200)//
-                .and()//
-                .body("rows[0].elements[0].distance.text", equalTo("232 mi"))//
-                .contentType(ContentType.JSON);
+                .statusCode(200);
+    }
+
+    @Test(enabled = false)
+    public void getRespondeBody() {
+        var response = RestAssured.given()//
+                .param("units", "imperial")//
+                .param("origins", "Washington,DC")//
+                .param("destinations", "New+York+City,NY")//
+                .param("key", KEY)//
+                .when()//
+                .get("/distancematrix/json");
+        System.out.println(response.getBody().prettyPrint());
     }
 }
