@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 
 public class TwitterExtractResponsetTest {
 
@@ -28,8 +29,8 @@ public class TwitterExtractResponsetTest {
         assertNotNull(TWITTER_SECRET_TOKEN);
     }
 
-    @Test
-    public void statusCode200AndReponseNotNullVerification() {
+    @Test(enabled = false)
+    public void extractResponse() {
         var response = RestAssured.given()//
                 .auth()//
                 .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
@@ -39,6 +40,7 @@ public class TwitterExtractResponsetTest {
                 .statusCode(200)//
                 .extract().response();
 
-        assertNotNull(response.path("id_str"));
+        var jsPath = new JsonPath(response.asInputStream());
+        assertNotNull(jsPath.get("user.name"));
     }
 }
