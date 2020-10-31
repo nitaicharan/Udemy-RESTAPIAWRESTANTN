@@ -37,7 +37,8 @@ public class TwitterGETRequestTest {
                 .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
                 .queryParam("status", "My First Tweet")//
                 .when()//
-                .post("/update.json").then()//
+                .post("/update.json")//
+                .then()//
                 .statusCode(200)//
                 .extract().response();
 
@@ -45,15 +46,28 @@ public class TwitterGETRequestTest {
     }
 
     @Test(dependsOnMethods = { "postTweet" })
-    public void redTweet() {
+    public void readTweet() {
         var response = RestAssured.given()//
                 .auth()//
                 .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
                 .queryParam("id", this.tweetId)//
                 .when()//
-                .get("/show.json").then()//
+                .get("/show.json")//
+                .then()//
                 .extract().response();
 
         assertEquals("My First Tweet", response.path("text"));
+    }
+
+    @Test(dependsOnMethods = { "readTweet" })
+    public void deleteTweet() {
+        RestAssured.given()//
+                .auth()//
+                .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
+                .queryParam("id", this.tweetId)//
+                .when()//
+                .post("/destroy.json")//
+                .then()//
+                .statusCode(200);
     }
 }
