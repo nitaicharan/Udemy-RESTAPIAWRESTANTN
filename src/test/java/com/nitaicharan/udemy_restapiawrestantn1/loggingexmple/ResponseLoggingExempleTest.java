@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class RequestLoggingExempleTest {
+public class ResponseLoggingExempleTest {
 
     private String tweetId;
     private String TWITTER_KEY = System.getenv("TWITTER_KEY");
@@ -32,14 +32,13 @@ public class RequestLoggingExempleTest {
     @Test
     public void testMethod() {
         var response = RestAssured.given()//
-                // .log().all()//
-                // .log().ifValidationFails()//
-                .auth()//
-                .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
+                .auth().oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
                 .queryParam("status", "My First Tweet")//
                 .when()//
                 .post("/update.json")//
                 .then()//
+                .log().all()//
+                // .log().ifError()//
                 .statusCode(200)//
                 .extract().response();
 
