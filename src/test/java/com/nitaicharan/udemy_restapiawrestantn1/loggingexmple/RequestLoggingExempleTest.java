@@ -7,8 +7,9 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class TwitterPOSTRequestTest {
+public class RequestLoggingExempleTest {
 
+    private String tweetId;
     private String TWITTER_KEY = System.getenv("TWITTER_KEY");
     private String TWITTER_SECRET_KEY = System.getenv("TWITTER_SECRET_KEY");
     private String TWITTER_TOKEN = System.getenv("TWITTER_TOKEN");
@@ -28,14 +29,32 @@ public class TwitterPOSTRequestTest {
         assertNotNull(TWITTER_SECRET_TOKEN);
     }
 
-    @Test(enabled = false)
-    public void statusCodeVerification() {
-        RestAssured.given()//
+    @Test
+    public void testMethod() {
+        var response = RestAssured.given()//
+                .log().all()//
+                // .log().ifValidationFails()//
                 .auth()//
                 .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
                 .queryParam("status", "My First Tweet")//
                 .when()//
-                .post("/update.json").then()//
+                .post("/update.json")//
+                .then()//
+                .statusCode(200)//
+                .extract().response();
+
+        this.tweetId = response.path("id_str");
+    }
+
+    @Test(dependsOnMethods = { "testMethod" })
+    public void deleteTweet() {
+        RestAssured.given()//
+                .auth()//
+                .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
+                .pathParam("id", this.tweetId)//
+                .when()//
+                .post("/destroy/{id}.json")//
+                .then()//
                 .statusCode(200);
     }
 }
