@@ -1,4 +1,4 @@
-package com.nitaicharan.udemy_restapiawrestantn1.loggingexmple;
+package com.nitaicharan.udemy_restapiawrestantn1.assertexamples;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -7,13 +7,13 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class ResponseLoggingExempleTest {
+public class TwitterAssertExampleTest {
 
-    private String tweetId;
     private String TWITTER_KEY = System.getenv("TWITTER_KEY");
     private String TWITTER_SECRET_KEY = System.getenv("TWITTER_SECRET_KEY");
     private String TWITTER_TOKEN = System.getenv("TWITTER_TOKEN");
     private String TWITTER_SECRET_TOKEN = System.getenv("TWITTER_SECRET_TOKEN");
+    private String TWITTER_USER_ID = System.getenv("TWITTER_USER_ID");
 
     @BeforeClass
     public void setup() {
@@ -27,33 +27,20 @@ public class ResponseLoggingExempleTest {
         assertNotNull(TWITTER_SECRET_KEY);
         assertNotNull(TWITTER_TOKEN);
         assertNotNull(TWITTER_SECRET_TOKEN);
+        assertNotNull(TWITTER_USER_ID);
     }
 
     @Test
-    public void testMethod() {
-        var response = RestAssured.given()//
-                .auth().oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
-                .queryParam("status", "My First Tweet")//
-                .when()//
-                .post("/update.json")//
-                .then()//
-                // .log().all()//
-                // .log().ifError()//
-                .statusCode(200)//
-                .extract().response();
-
-        this.tweetId = response.path("id_str");
-    }
-
-    @Test(dependsOnMethods = { "testMethod" })
-    public void deleteTweet() {
+    public void readTweet() {
         RestAssured.given()//
-                .auth()//
-                .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
-                .pathParam("id", this.tweetId)//
+                .auth().oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
+                .log().all()//
+                // .queryParam("user_id", "apiautomation")//
+                .queryParam("user_id", TWITTER_USER_ID)//
                 .when()//
-                .post("/destroy/{id}.json")//
+                .get("/user_timeline.json")//
                 .then()//
-                .statusCode(200);
+                .log().all()//
+                .extract().response();
     }
 }
