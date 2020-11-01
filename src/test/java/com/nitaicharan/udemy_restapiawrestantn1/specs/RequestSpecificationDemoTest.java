@@ -9,13 +9,14 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 
 public class RequestSpecificationDemoTest {
+    
+    private RequestSpecBuilder specBuilder;
     private String TWITTER_KEY = System.getenv("TWITTER_KEY");
     private String TWITTER_SECRET_KEY = System.getenv("TWITTER_SECRET_KEY");
     private String TWITTER_TOKEN = System.getenv("TWITTER_TOKEN");
     private String TWITTER_SECRET_TOKEN = System.getenv("TWITTER_SECRET_TOKEN");
     private String TWITTER_USER_ID = System.getenv("TWITTER_USER_ID");
     private String TWITTER_USER_NAME = System.getenv("TWITTER_USER_NAME");
-    private RequestSpecBuilder specBuilder;
 
     @BeforeClass
     public void setup() {
