@@ -1,7 +1,7 @@
 package com.nitaicharan.udemy_restapiawrestantn1.assertexamples;
 
-import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItem;
 import static org.junit.Assert.assertNotNull;
 
 import org.testng.annotations.BeforeClass;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class TwitterHardAssertExampleTest {
+public class TwitterSoftAssertExampleTest {
 
     private String tweetId1 = "";
     private String tweetId2 = "";
@@ -66,16 +66,18 @@ public class TwitterHardAssertExampleTest {
     public void readTweet() {
         RestAssured.given()//
                 .auth().oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
-                // .log().all()//
+                .log().all()//
                 .queryParam("user_id", TWITTER_USER_ID)//
                 .when()//
                 .get("/user_timeline.json")//
                 .then()//
                 .statusCode(200)//
-                .body("user.name", hasItem(TWITTER_USER_NAME))//
-                .body("entities.hashtags[1].size()", equalTo(1))//
-                .body("entities.hashtags[0].size()", equalTo(2));//
-                // .log().all();//
+                .body(//
+                        "user.name", hasItem(TWITTER_USER_NAME), //
+                        "entities.hashtags[1].size()", equalTo(1), //
+                        "entities.hashtags[0].size()", equalTo(2)//
+                )//
+                .log().all();//
     }
 
     @Test(dependsOnMethods = { "readTweet" })
