@@ -1,4 +1,4 @@
-package com.nitaicharan.udemy_restapiawrestantn1.assertexamples;
+package com.nitaicharan.udemy_restapiawrestantn1.usefultricks;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItem;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class TwitterSoftAssertExampleTest {
+public class TwitterRootPathExampleTest {
 
     private String tweetId1 = "";
     private String tweetId2 = "";
@@ -72,12 +72,12 @@ public class TwitterSoftAssertExampleTest {
                 .get("/user_timeline.json")//
                 .then()//
                 .statusCode(200)//
-                .body(//
-                        "user.name", hasItem(TWITTER_USER_NAME), //
-                        "entities.hashtags[1].size()", equalTo(1), //
-                        "entities.hashtags[0].size()", equalTo(2)//
-                );//
-                  // .log().all();//
+                .rootPath("user")//
+                .body("name", hasItem(TWITTER_USER_NAME))//
+                .rootPath("entities")//
+                .body("hashtags[1].size()", equalTo(1))//
+                .body("hashtags[0].size()", equalTo(2));//
+        // .log().all();//
     }
 
     @Test(dependsOnMethods = { "readTweet" })

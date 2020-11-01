@@ -1,15 +1,18 @@
-package com.nitaicharan.udemy_restapiawrestantn1.assertexamples;
+package com.nitaicharan.udemy_restapiawrestantn1.usefultricks;
 
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasItem;
 import static org.junit.Assert.assertNotNull;
+
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class TwitterRootPathExampleTest {
+public class TwitterCheckResponseTimeTest {
 
     private String tweetId1 = "";
     private String tweetId2 = "";
@@ -56,8 +59,10 @@ public class TwitterRootPathExampleTest {
                 .oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
                 .queryParam("status", "My Secound Tweet #first #second")//
                 .when()//
-                .post("/update.json").then()//
-                .statusCode(200).extract().response();
+                .post("/update.json")//
+                .then()//
+                .statusCode(200)//
+                .extract().response();
 
         this.tweetId2 = response.path("id_str");
     }
@@ -72,12 +77,13 @@ public class TwitterRootPathExampleTest {
                 .get("/user_timeline.json")//
                 .then()//
                 .statusCode(200)//
+                .time(greaterThan(0L), TimeUnit.MILLISECONDS)//
                 .rootPath("user")//
                 .body("name", hasItem(TWITTER_USER_NAME))//
                 .rootPath("entities")//
                 .body("hashtags[1].size()", equalTo(1))//
                 .body("hashtags[0].size()", equalTo(2));//
-        // .log().all();//
+        // .time()
     }
 
     @Test(dependsOnMethods = { "readTweet" })
