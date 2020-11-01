@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class TwitterSoftAssertExampleTest {
+public class TwitterRootPathExampleTest {
 
     private String tweetId1 = "";
     private String tweetId2 = "";
@@ -66,18 +66,18 @@ public class TwitterSoftAssertExampleTest {
     public void readTweet() {
         RestAssured.given()//
                 .auth().oauth(TWITTER_KEY, TWITTER_SECRET_KEY, TWITTER_TOKEN, TWITTER_SECRET_TOKEN)//
-                .log().all()//
+                // .log().all()//
                 .queryParam("user_id", TWITTER_USER_ID)//
                 .when()//
                 .get("/user_timeline.json")//
                 .then()//
                 .statusCode(200)//
-                .body(//
-                        "user.name", hasItem(TWITTER_USER_NAME), //
-                        "entities.hashtags[1].size()", equalTo(1), //
-                        "entities.hashtags[0].size()", equalTo(2)//
-                );//
-                  // .log().all();//
+                .rootPath("user")//
+                .body("name", hasItem(TWITTER_USER_NAME))//
+                .rootPath("entities")//
+                .body("hashtags[1].size()", equalTo(1))//
+                .body("hashtags[0].size()", equalTo(2));//
+        // .log().all();//
     }
 
     @Test(dependsOnMethods = { "readTweet" })
