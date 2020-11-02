@@ -1,0 +1,384 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>61/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 03 10:59:06 BRT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24150 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest.deleteTweet()'><b>deleteTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest@c81cdd1</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest.deleteTweet()'><b>deleteTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest@1fc2b765</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest.deleteTweet()'><b>deleteTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest.deleteTweet()'><b>deleteTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.deleteTweet1()'><b>deleteTweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.deleteTweet1()'><b>deleteTweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.deleteTweet1()'><b>deleteTweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.deleteTweet1()'><b>deleteTweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.deleteTweet1()'><b>deleteTweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.deleteTweet1()'><b>deleteTweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.deleteTweet2()'><b>deleteTweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.deleteTweet2()'><b>deleteTweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.deleteTweet2()'><b>deleteTweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.deleteTweet2()'><b>deleteTweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.deleteTweet2()'><b>deleteTweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.deleteTweet2()'><b>deleteTweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest.extractResponse()'><b>extractResponse</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest@365185bd</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest@c81cdd1</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest@1fc2b765</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest@75881071</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest@2a70a3d8</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.basic.PostRequestTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.basic.PostRequestTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.basic.PostRequestTest@289d1c02</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest@78ac1102</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterPOSTRequestTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterPOSTRequestTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterPOSTRequestTest@12c8a2c0</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterExtractResponsetTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterExtractResponsetTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterExtractResponsetTest@7e0e6aa2</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest@365185bd</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.keyNotNull()'><b>keyNotNull</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest.postTweet()'><b>postTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest.postTweet()'><b>postTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest@78ac1102</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.readTweet()'><b>readTweet</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest.statusCodeVerification()'><b>statusCodeVerification</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest@75881071</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest.statusCodeVerification()'><b>statusCodeVerification</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest@2a70a3d8</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest.testMethod()'><b>testMethod</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest</td>
+<td></td>
+<td>2</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest@c81cdd1</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest.testMethod()'><b>testMethod</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest@1fc2b765</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.tweet1()'><b>tweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.tweet1()'><b>tweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.tweet1()'><b>tweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.tweet1()'><b>tweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.tweet1()'><b>tweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.tweet1()'><b>tweet1</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.tweet2()'><b>tweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.tweet2()'><b>tweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.tweet2()'><b>tweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.tweet2()'><b>tweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.tweet2()'><b>tweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14</td></tr>
+<tr>
+<td title='com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.tweet2()'><b>tweet2</b><br>Test class: com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261</td></tr>
+</table><p>
+</body>
+</html>

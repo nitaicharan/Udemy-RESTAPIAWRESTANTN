@@ -39,6 +39,6 @@ public class GoogleExtractResponseTest {
 
         var xmlPaht = new XmlPath(response.asInputStream());
         var value = xmlPaht.get("distancematrixresponce.row.element.duration.value");
-        assertEquals("13770", value);
+        assertEquals("13790", value);
     }
 }

@@ -5,7 +5,7 @@
 ![Java][java-shield]
 ![Spring][spring-shield]
 
-<p align="center">:bangbang: Project available to access at: https://nitaicharan.github.io/Udemy-RESTAPIAWRESTANTN1 :bangbang:</p>
+<p align="center">:bangbang: Project available to access at: https://nitaicharan.github.io/Udemy-RESTAPIAWRESTANTN1/ :bangbang:</p>
 
 <!--[![](Udemy-RESTAPIAWRESTANTN1.png)](https://nitaicharan.github.io/Udemy-RESTAPIAWRESTANTN1/)-->
 <a href="https://nitaicharan.github.io/Udemy-RESTAPIAWRESTANTN1">
@@ -23,7 +23,7 @@ This project was part of the Udemy course "Rest API Automation With Rest Assured
 - [Certificate][certificate-url]
 
 ### Certificate
-This certificate above verifies that [Nitai Charan][udemy-url] successfully completed the course [Rest API Automation With Rest Assured - Novice To Ninja][course-url] on ??/??/???? as taught by [Lets Kode It][instructor-url] on Udemy. The certificate indicates the entire course was completed as validated by the student.
+This certificate above verifies that [Nitai Charan][udemy-url] successfully completed the course [Rest API Automation With Rest Assured - Novice To Ninja][course-url] on 10/22/2020 as taught by [Lets Kode It][instructor-url] on Udemy. The certificate indicates the entire course was completed as validated by the student.
 
 <p align="center">
   <img src="CERTIFICATE.jpg">
@@ -41,15 +41,14 @@ This certificate above verifies that [Nitai Charan][udemy-url] successfully comp
 ## Development GitHub Pages
 
 ```
-ionic build --prod --base-href=/Udemy-RESTAPIAWRESTANTN1/
+mvn clean site
 
 git add -A
 git commit -m <titule> <message>
 git push origin <branch>
-git subtree push --prefix www/ origin gh-pages
-git push origin `git subtree split --prefix www master`:gh-pages --force
+git subtree push --prefix target/site/ origin gh-page
+git push origin `git subtree split --prefix target/site/ main`:gh-pages --force
 ```
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
@@ -59,7 +58,7 @@ git push origin `git subtree split --prefix www master`:gh-pages --force
 <!-- ALIES README -->
 [course-url]: https://udemy.com/course/rest-api-automation
 [instructor-url]: https://udemy.com/user/criticalthinking
-[certificate-url]: #
+[certificate-url]: https://ude.my/UC-e5b47197-70eb-4bab-b46d-2449cfad0c07
 
 <!-- CONTACT SHIELDS -->
 

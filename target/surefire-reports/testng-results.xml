@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="65" passed="61" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-03T10:59:06 BRT" name="Command line suite" finished-at="2020-11-03T10:59:30 BRT" duration-ms="24150">
+    <groups>
+    </groups>
+    <test started-at="2020-11-03T10:59:06 BRT" name="Command line test" finished-at="2020-11-03T10:59:30 BRT" duration-ms="24150">
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest">
+        <test-method signature="statusCodeVerification()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest@2a70a3d8]" started-at="2020-11-03T10:59:11 BRT" name="statusCodeVerification" finished-at="2020-11-03T10:59:12 BRT" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusCodeVerification -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest@2a70a3d8]" started-at="2020-11-03T10:59:11 BRT" name="setup" finished-at="2020-11-03T10:59:11 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest@2a70a3d8]" started-at="2020-11-03T10:59:11 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:11 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.basic.ValidateResponseTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b]" started-at="2020-11-03T10:59:20 BRT" name="setup" finished-at="2020-11-03T10:59:20 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b]" started-at="2020-11-03T10:59:20 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:20 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method signature="tweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b]" started-at="2020-11-03T10:59:20 BRT" name="tweet1" finished-at="2020-11-03T10:59:20 BRT" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet1 -->
+        <test-method signature="tweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b]" started-at="2020-11-03T10:59:20 BRT" name="tweet2" finished-at="2020-11-03T10:59:21 BRT" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet2 -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b]" started-at="2020-11-03T10:59:21 BRT" name="readTweet" finished-at="2020-11-03T10:59:21 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.tweet1, com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.tweet2" duration-ms="454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="deleteTweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b]" started-at="2020-11-03T10:59:21 BRT" name="deleteTweet1" finished-at="2020-11-03T10:59:22 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.readTweet" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet1 -->
+        <test-method signature="deleteTweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest@2de8284b]" started-at="2020-11-03T10:59:22 BRT" name="deleteTweet2" finished-at="2020-11-03T10:59:22 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest.readTweet" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet2 -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.specs.ResponseSpecificationDemoTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterExtractResponsetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterExtractResponsetTest@7e0e6aa2]" started-at="2020-11-03T10:59:25 BRT" name="setup" finished-at="2020-11-03T10:59:25 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterExtractResponsetTest@7e0e6aa2]" started-at="2020-11-03T10:59:25 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:25 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterExtractResponsetTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest@c81cdd1]" started-at="2020-11-03T10:59:06 BRT" name="setup" finished-at="2020-11-03T10:59:07 BRT" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testMethod()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest@c81cdd1]" started-at="2020-11-03T10:59:07 BRT" name="testMethod" finished-at="2020-11-03T10:59:09 BRT" duration-ms="2083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest@c81cdd1]" started-at="2020-11-03T10:59:09 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:09 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method signature="deleteTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest@c81cdd1]" started-at="2020-11-03T10:59:09 BRT" name="deleteTweet" finished-at="2020-11-03T10:59:09 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest.testMethod" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.RequestLoggingExempleTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d]" started-at="2020-11-03T10:59:24 BRT" name="setup" finished-at="2020-11-03T10:59:24 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d]" started-at="2020-11-03T10:59:24 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:24 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method signature="postTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d]" started-at="2020-11-03T10:59:24 BRT" name="postTweet" finished-at="2020-11-03T10:59:24 BRT" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d]" started-at="2020-11-03T10:59:24 BRT" name="readTweet" finished-at="2020-11-03T10:59:25 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest.postTweet" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="deleteTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest@a74868d]" started-at="2020-11-03T10:59:25 BRT" name="deleteTweet" finished-at="2020-11-03T10:59:25 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest.readTweet" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterGETRequestTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest">
+        <test-method signature="tweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14]" started-at="2020-11-03T10:59:25 BRT" name="tweet1" finished-at="2020-11-03T10:59:26 BRT" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet1 -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14]" started-at="2020-11-03T10:59:25 BRT" name="setup" finished-at="2020-11-03T10:59:25 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14]" started-at="2020-11-03T10:59:25 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:25 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method signature="tweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14]" started-at="2020-11-03T10:59:26 BRT" name="tweet2" finished-at="2020-11-03T10:59:26 BRT" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet2 -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14]" started-at="2020-11-03T10:59:26 BRT" name="readTweet" finished-at="2020-11-03T10:59:27 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.tweet1, com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.tweet2" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="deleteTweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14]" started-at="2020-11-03T10:59:27 BRT" name="deleteTweet1" finished-at="2020-11-03T10:59:27 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.readTweet" duration-ms="525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet1 -->
+        <test-method signature="deleteTweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest@18bf3d14]" started-at="2020-11-03T10:59:27 BRT" name="deleteTweet2" finished-at="2020-11-03T10:59:28 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest.readTweet" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet2 -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterSoftAssertExampleTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest@365185bd]" started-at="2020-11-03T10:59:25 BRT" name="setup" finished-at="2020-11-03T10:59:25 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="extractResponse()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest@365185bd]" started-at="2020-11-03T10:59:25 BRT" name="extractResponse" finished-at="2020-11-03T10:59:25 BRT" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractResponse -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest@365185bd]" started-at="2020-11-03T10:59:25 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:25 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.extractresponse.GoogleExtractResponseTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest">
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f]" started-at="2020-11-03T10:59:14 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:14 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f]" started-at="2020-11-03T10:59:14 BRT" name="setup" finished-at="2020-11-03T10:59:14 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f]" started-at="2020-11-03T10:59:14 BRT" name="tweet1" finished-at="2020-11-03T10:59:15 BRT" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet1 -->
+        <test-method signature="tweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f]" started-at="2020-11-03T10:59:15 BRT" name="tweet2" finished-at="2020-11-03T10:59:15 BRT" duration-ms="515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet2 -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f]" started-at="2020-11-03T10:59:15 BRT" name="readTweet" finished-at="2020-11-03T10:59:16 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.tweet1, com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.tweet2" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="deleteTweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f]" started-at="2020-11-03T10:59:16 BRT" name="deleteTweet1" finished-at="2020-11-03T10:59:16 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.readTweet" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet1 -->
+        <test-method signature="deleteTweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest@17d0685f]" started-at="2020-11-03T10:59:16 BRT" name="deleteTweet2" finished-at="2020-11-03T10:59:17 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest.readTweet" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet2 -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterRootPathExampleTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261]" started-at="2020-11-03T10:59:28 BRT" name="setup" finished-at="2020-11-03T10:59:28 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261]" started-at="2020-11-03T10:59:28 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:28 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method signature="tweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261]" started-at="2020-11-03T10:59:28 BRT" name="tweet1" finished-at="2020-11-03T10:59:29 BRT" duration-ms="526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet1 -->
+        <test-method signature="tweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261]" started-at="2020-11-03T10:59:29 BRT" name="tweet2" finished-at="2020-11-03T10:59:29 BRT" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet2 -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261]" started-at="2020-11-03T10:59:29 BRT" name="readTweet" finished-at="2020-11-03T10:59:30 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.tweet1, com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.tweet2" duration-ms="499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="deleteTweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261]" started-at="2020-11-03T10:59:30 BRT" name="deleteTweet1" finished-at="2020-11-03T10:59:30 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.readTweet" duration-ms="454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet1 -->
+        <test-method signature="deleteTweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest@4fb64261]" started-at="2020-11-03T10:59:30 BRT" name="deleteTweet2" finished-at="2020-11-03T10:59:30 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest.readTweet" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet2 -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.assertexamples.TwitterHardAssertExampleTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest">
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39]" started-at="2020-11-03T10:59:22 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:22 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39]" started-at="2020-11-03T10:59:22 BRT" name="setup" finished-at="2020-11-03T10:59:22 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="postTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39]" started-at="2020-11-03T10:59:22 BRT" name="postTweet" finished-at="2020-11-03T10:59:23 BRT" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39]" started-at="2020-11-03T10:59:23 BRT" name="readTweet" finished-at="2020-11-03T10:59:23 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest.postTweet" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="deleteTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest@396e2f39]" started-at="2020-11-03T10:59:23 BRT" name="deleteTweet" finished-at="2020-11-03T10:59:24 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest.readTweet" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterEndToEndWorkflowTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest@75881071]" started-at="2020-11-03T10:59:10 BRT" name="setup" finished-at="2020-11-03T10:59:10 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest@75881071]" started-at="2020-11-03T10:59:10 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:10 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method signature="statusCodeVerification()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest@75881071]" started-at="2020-11-03T10:59:10 BRT" name="statusCodeVerification" finished-at="2020-11-03T10:59:11 BRT" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusCodeVerification -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.basic.GetRequestTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e]" started-at="2020-11-03T10:59:17 BRT" name="setup" finished-at="2020-11-03T10:59:17 BRT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e]" started-at="2020-11-03T10:59:17 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:17 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method signature="tweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e]" started-at="2020-11-03T10:59:17 BRT" name="tweet1" finished-at="2020-11-03T10:59:17 BRT" duration-ms="499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet1 -->
+        <test-method signature="tweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e]" started-at="2020-11-03T10:59:17 BRT" name="tweet2" finished-at="2020-11-03T10:59:18 BRT" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet2 -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e]" started-at="2020-11-03T10:59:18 BRT" name="readTweet" finished-at="2020-11-03T10:59:18 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.tweet1, com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.tweet2" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="deleteTweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e]" started-at="2020-11-03T10:59:18 BRT" name="deleteTweet1" finished-at="2020-11-03T10:59:19 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.readTweet" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet1 -->
+        <test-method signature="deleteTweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest@3891771e]" started-at="2020-11-03T10:59:19 BRT" name="deleteTweet2" finished-at="2020-11-03T10:59:19 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest.readTweet" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet2 -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.specs.SpecificationWhithTimeTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.basic.PostRequestTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.basic.PostRequestTest@289d1c02]" started-at="2020-11-03T10:59:12 BRT" name="setup" finished-at="2020-11-03T10:59:12 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.basic.PostRequestTest@289d1c02]" started-at="2020-11-03T10:59:12 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:12 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.basic.PostRequestTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb]" started-at="2020-11-03T10:59:12 BRT" name="setup" finished-at="2020-11-03T10:59:12 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb]" started-at="2020-11-03T10:59:12 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:12 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method signature="tweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb]" started-at="2020-11-03T10:59:12 BRT" name="tweet1" finished-at="2020-11-03T10:59:12 BRT" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet1 -->
+        <test-method signature="tweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb]" started-at="2020-11-03T10:59:12 BRT" name="tweet2" finished-at="2020-11-03T10:59:13 BRT" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tweet2 -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb]" started-at="2020-11-03T10:59:13 BRT" name="readTweet" finished-at="2020-11-03T10:59:13 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.tweet1, com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.tweet2" duration-ms="595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="deleteTweet1()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb]" started-at="2020-11-03T10:59:13 BRT" name="deleteTweet1" finished-at="2020-11-03T10:59:14 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.readTweet" duration-ms="492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet1 -->
+        <test-method signature="deleteTweet2()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest@22eeefeb]" started-at="2020-11-03T10:59:14 BRT" name="deleteTweet2" finished-at="2020-11-03T10:59:14 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest.readTweet" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet2 -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.usefultricks.TwitterCheckResponseTimeTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest@78ac1102]" started-at="2020-11-03T10:59:19 BRT" name="setup" finished-at="2020-11-03T10:59:19 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="readTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest@78ac1102]" started-at="2020-11-03T10:59:19 BRT" name="readTweet" finished-at="2020-11-03T10:59:20 BRT" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest@78ac1102]" started-at="2020-11-03T10:59:19 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:19 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.specs.RequestSpecificationDemoTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterPOSTRequestTest">
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterPOSTRequestTest@12c8a2c0]" started-at="2020-11-03T10:59:25 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:25 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterPOSTRequestTest@12c8a2c0]" started-at="2020-11-03T10:59:25 BRT" name="setup" finished-at="2020-11-03T10:59:25 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.twitterapiexemple.TwitterPOSTRequestTest -->
+      <class name="com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest">
+        <test-method signature="keyNotNull()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest@1fc2b765]" started-at="2020-11-03T10:59:09 BRT" name="keyNotNull" finished-at="2020-11-03T10:59:09 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyNotNull -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest@1fc2b765]" started-at="2020-11-03T10:59:09 BRT" name="setup" finished-at="2020-11-03T10:59:09 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testMethod()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest@1fc2b765]" started-at="2020-11-03T10:59:09 BRT" name="testMethod" finished-at="2020-11-03T10:59:10 BRT" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method signature="deleteTweet()[pri:0, instance:com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest@1fc2b765]" started-at="2020-11-03T10:59:10 BRT" name="deleteTweet" finished-at="2020-11-03T10:59:10 BRT" depends-on-methods="com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest.testMethod" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.nitaicharan.udemy_restapiawrestantn1.loggingexmple.ResponseLoggingExempleTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
